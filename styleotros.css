@@ -1,0 +1,19 @@
+.ezlngaleria{
+display: grid;
+grid-column: 1fr 1fr 1fr;
+grid-row: 1fr 1fr 1fr;
+grid-template-areas:
+"cu cd ct ."
+". . . ."
+". . . .";
+}
+.carpuno{
+grid-area: cu;
+/* back: */
+}
+.carpdos{
+grid-area: cd;
+}
+.carptres{
+grid-area:ct
+}

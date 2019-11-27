@@ -1,0 +1,180 @@
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+    border: 0px 0px 0px 0px;
+    
+}
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+/* ------css reset----- */
+.fondo{
+ background-image: url(../images/fondo.gif);
+ background-size: contain;
+ background-repeat: repeat;  
+ margin: 0px 0px 0px 0px; 
+
+} 
+.cabecera{
+    margin: 0px 0px 0px 0px;
+    padding: 0%;
+    display: grid;
+                    /*   .  l    t   s   m   . */
+                    /* 30% 15%  10% 10% 3rem 37rem */
+    grid-template-rows: 30% 15rem 7rem 7rem 1fr 1fr;
+    grid-template-columns: 1fr 40% 1fr ;
+    grid-template-areas: 
+    ". . ."
+    ". l ." 
+    "t t t"
+    "s s s"
+    ". m ."
+    ". . .";
+    
+}
+/* .cute{
+    grid-area: cu;
+    si
+} */
+
+.logo{
+    grid-area: l;
+    background-image: url(../images/logohome.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu{
+    justify-self: center;
+    justify-content: space-between;
+    align-self: center;
+    align-self: center;
+    grid-area: m;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 12px;
+}
+.subtitulo{
+    grid-area: s;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+.titulo{
+    background-color: rgba(230, 230, 250, 0);
+    grid-area:t;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h5{
+    /* grid-area: h; */
+     width: 600px;
+     height: 600px;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+/* Menu */
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+.dropdownmenu ul {
+	/* background: gray; */
+	list-style: none;
+    width: 100%;
+    display: flex;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+    width:auto;
+    display: flex;
+}
+.dropdownmenu a {
+	background: rgb(247, 184, 181);
+	color: rgb(70, 46, 23);
+	display: block;
+	font-size: 17px;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+.wo{
+    background: rgb(247, 184, 181);
+    border: solid 1px
+    #ffffff;
+    border-radius: 8px;
+
+}
+.il{
+    background: rgb(247, 184, 181);
+    border: solid 1px
+    #ffffff;
+    border-radius: 8px;
+}
+.oth{
+    background: rgb(247, 184, 181);
+    border: solid 1px
+    #ffffff;
+    border-radius: 8px;
+}
+
+
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: rgba(157, 90, 59, 0.406);
+}
+
+.content{
+    color: white;
+
+}
