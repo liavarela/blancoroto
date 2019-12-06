@@ -38,7 +38,7 @@ html {
   }
 /* ------css reset----- */
 .fondo{
- background-image: url(../images/fondo.gif);
+ background-image: url(../blancoroto_si/images/fondo.gif);
  background-size: contain;
  background-repeat: repeat;  
  margin: 0px 0px 0px 0px; 
@@ -68,7 +68,7 @@ html {
 
 .logo{
     grid-area: l;
-    background-image: url(../images/logohome.svg);
+    background-image: url(../blancoroto_si/images/logohome.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
